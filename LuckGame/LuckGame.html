@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Test Your Luck</title>
+
+  </head>
+
+  <body>
+    
+    <div class="card">
+      
+      <div style="text-align:center" class="card-header">Test Your Luck</div>
+      
+      <div id="game-block">
+        
+        <div class="row">
+          <p class=" col-lg-9 pull-left">
+            Turns Left :  <span id="turns">10</span>
+          </p>
+          <p class="col-lg-3  pull-right">
+            Correct : <span id="correct">0</span><br />
+            Wrong : <span id="wrong">0</span>
+          </p>
+        </div>
+
+        <div style="font-size: 60px" class="text-center" id="rand">27</div>
+
+        <div class="text-center row">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-2 mt-2">
+            <button id="rand1" class="option button">
+              Option 1
+            </button>
+          </div>
+          <div class="col-lg-2 mt-2">
+            <div class="col-lg-2"></div>
+            <button id="rand2" class="option button">
+              Option 2
+            </button>
+          </div>
+          <div class="col-lg-2 mt-2">
+            <div class="col-lg-2"></div>
+            <button id="rand3" class="option button">
+              Option 3
+            </button>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="text-center"><button id="next">Next</button></div>
+      
+      </div>
+
+      <div id="result-block" style="display: none" class="text-center">
+        <h4 id="correct_output"></h4>
+        <br>
+        <h4 id="performance"></h4>
+        <button class="button" id="play-again">Play Again?</button>
+      </div>
+
+      <br>
+
+    </div>
+
+    <script src="./js/game.js"></script>
+  </body>
+
+</html>
